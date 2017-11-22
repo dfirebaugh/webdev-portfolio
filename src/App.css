@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+  margin:auto 0;
+}
+
+.App-logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 2em;
+}
+.logoStyle{
+	display: inline-block;
+	width: 2em;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+.App-footer {
+  background-color: #222;
+  height: 50px;
+  padding: 10px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.topBar{
+
+  /*color:white;
+  padding:5px;
+  padding-left:15px;*/
+  /*position:fixed;*/
+
+}
+.App-intro{
+  margin-top:120px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.wrapper {
+        display: flex;
+}
+
+#sidebar {
+        min-width: 250px;
+        max-width: 250px;
+        height: 100vh;
+}
+
+.cardTitle{
+
+}
+.cardBody{
+  height:120em;
+  width:20%;
+}
+.cardFooter{
+  position:absolute;
+  bottom:0;
+  width:85%;
+}
+.cardHolder{
+  /*width:20%;*/
+  color:white;
+  display:flex;
+  flex-wrap:wrap;
+  margin-bottom:150px;
+}
+
+.cardContainer{
+  /*width:30%;*/
+  color:white;
+  margin: 0 auto;
+  padding:10px;
+}
+
+.projects{
+  padding-top:35px;
+}
+
+.aboutMe{
+  margin-bottom:10em;
+  display:flex;
+}
+.aboutContainer{
+  /*margin-bottom:0em;*/
+}
+
+
+.tech-list button{
+  margin:5px;
+  /*width:12em;
+  position:relative;*/
+}
+
+.aboutFooter{
+  /*margin-left:45;*/
+  /*position:absolute;*/
+  bottom:.2;
+  margin-bottom:2.6em;
+}
+.aboutFooter a{
+  padding:3px;
+}
+
+/*.selfPhoto{
+  width:250px;
+  height:200px;
+}*/
