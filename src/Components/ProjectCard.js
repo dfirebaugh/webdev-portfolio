@@ -15,7 +15,9 @@ class ProjectCard extends Component {
     const cardStyle = {
       color:'white'
     }
-
+    let techBtns = this.props.techs.map(function(item, index){
+      return item + " " ;
+    })
     return (
       <div className="cardContainer">
       <a className="cardTitle"style={cardStyle} href={this.props.url}>
@@ -28,7 +30,7 @@ class ProjectCard extends Component {
       </div>
       <footer className="cardFooter">Technologies:
       <div>
-      {this.props.techs}
+      {techBtns}
       </div>
       </footer>
         </div>

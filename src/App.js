@@ -38,6 +38,9 @@ class App extends Component {
       case 'expressBtn':
         this.setState({showTech:'ExpressJS'});
         break;
+      case 'mongoBtn':
+        this.setState({showTech:'MongoDB'});
+        break;
       case 'd3Btn':
           this.setState({showTech:'D3js'});
           break;
@@ -117,6 +120,7 @@ function filterByName(item) {
 <button id='reactBtn' type="button" className="btn btn-success" onClick={this.handleClick.bind(this)}>React.js</button>
 <button id='jqueryBtn' type="button" className="btn btn-success" onClick={this.handleClick}>JQuery</button>
 <button id='nodeBtn' type="button" className="btn btn-success" onClick={this.handleClick}>Node.js</button>
+<button id='mongoBtn' type="button" className="btn btn-success" onClick={this.handleClick}>MongoDB</button>
 <button id='d3Btn' type="button" className="btn btn-success" onClick={this.handleClick}>D3.js</button>
 
 <button id='x' type="button" className="btn btn-secondary" onClick={this.handleClick}>X</button>

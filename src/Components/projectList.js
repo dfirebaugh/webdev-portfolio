@@ -97,21 +97,21 @@ let projects = [{
 },
 {
   name:'url shortener-api',
-  url:'https://github.com/dfirebaugh/url_shortener',
+  url:'https://dfire-url-shortener.glitch.me/www.google.com',
   github:'https://github.com/dfirebaugh/url_shortener',
   image:'',
-  tech:['ExpressJS','NodeJS']
+  tech:['ExpressJS','NodeJS','MongoDB']
 },
 {
   name:'headerparser-api',
-  url:'https://github.com/dfirebaugh/headerparser-api',
+  url:'https://dfire-headparser-api.glitch.me/',
   github:'https://github.com/dfirebaugh/headerparser-api',
   image:'',
   tech:['ExpressJS','NodeJS']
 },
 {
   name:'timestamp-api',
-  url:'https://github.com/dfirebaugh/timestamp-api',
+  url:'https://dfire-timestamp-api.glitch.me',
   github:'https://github.com/dfirebaugh/timestamp-api',
   image:'',
   tech:['ExpressJS','NodeJS']
@@ -129,7 +129,19 @@ let projects = [{
   codepen:'https://codepen.io/dfire/pen/pdwOKb',
   image:scatter,
   tech:['D3js']
-},
+},{
+  name:'File Metadata Microservice',
+  url:'https://dfire-file-metadata-microservice.glitch.me',
+  github:'https://github.com/dfirebaugh/file-metadata-microservice',
+  image:'',
+  tech:['ExpressJS','NodeJS']
+},{
+  name:'Image Search Abstraction Layer',
+  url:'https://dfire-image-search-abstraction.glitch.me/imagesearch/lol cats',
+  github:'https://github.com/dfirebaugh/image-search-abstraction-layer',
+  image:'',
+  tech:['ExpressJS','NodeJS','MongoDB']
+}
 
 
 
