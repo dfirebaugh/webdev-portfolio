@@ -11,6 +11,7 @@ import md from '../images/md.jpg';
 import speed from '../images/speed.jpg';
 import bar from '../images/bar.jpg';
 import scatter from '../images/scatter.jpg';
+import weather from '../images/weather.jpg';
 
 let projects = [{
   name:'RogueLike',
@@ -34,6 +35,13 @@ let projects = [{
   tech:['ReactJS']
 },
 {
+  name:'Weather',
+  url:'https://dfirebaugh.github.io/weather-dashboard/',
+  github:'https://github.com/dfirebaugh/weather-dashboard',
+  image:weather,
+  tech:['ReactJS', 'Bootstrap']
+},
+{
   name:'Ultimaker Web DashBoard',
   url:'http://ultimaker.hackrva.org',
   github:'https://github.com/dfirebaugh/um3-react-dashboard',
@@ -54,13 +62,6 @@ let projects = [{
   image:fcc,
   tech:['ReactJS']
 },
-// {
-//   name:'Weather',
-//   url:'',
-//   github:'',
-//   image:'',
-//   tech:['ReactJS']
-// },
 {
   name:'TicTacToe',
   url:'https://codepen.io/dfire/full/xOxrJO/',
