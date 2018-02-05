@@ -1,6 +1,7 @@
+import portfolio from '../images/portfolio.jpg';
 import rogue from '../images/roguelike.jpg';
 import gol from '../images/gameoflife.jpg';
-import recipe from '../images/recipe.jpg';
+// import recipe from '../images/recipe.jpg';
 import um3 from '../images/um3.jpg';
 import markdown from '../images/markdown.jpg';
 import fcc from '../images/fcc.jpg';
@@ -14,6 +15,13 @@ import scatter from '../images/scatter.jpg';
 import weather from '../images/weather.jpg';
 
 let projects = [{
+  name:'WebDev Portfolio',
+  url:'http://dfire.io',
+  github:'https://github.com/dfirebaugh/webdev-portfolio',
+  image:portfolio,
+  tech:['ReactJS','Bootstrap']
+},
+{
   name:'RogueLike',
   url:'https://dfirebaugh.github.io/roguelike-crawler/',
   github:'https://github.com/dfirebaugh/roguelike-crawler',
@@ -27,13 +35,13 @@ let projects = [{
   image:gol,
   tech:['ReactJS']
 },
-{
-  name:'Recipe Book',
-  url:'https://codepen.io/dfire/full/JJvNJg/',
-  github:'https://github.com/dfirebaugh/recipe-book',
-  image:recipe,
-  tech:['ReactJS']
-},
+// {
+//   name:'Recipe Book',
+//   url:'https://codepen.io/dfire/full/JJvNJg/',
+//   github:'https://github.com/dfirebaugh/recipe-book',
+//   image:recipe,
+//   tech:['ReactJS']
+// },
 {
   name:'Weather',
   url:'https://dfirebaugh.github.io/weather-dashboard/',
