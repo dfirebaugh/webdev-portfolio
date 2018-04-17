@@ -19,7 +19,7 @@ class About extends Component {
       <img style={photoStyle} className='selfPhoto' alt='selfphoto' src={df}></img>
       <h3>Dustin Firebaugh</h3>
       {
-        "I previously worked as a Sr. Systems Engineer for many years.  After finding a passion for programming, I decided to transition into a role as a web developer.  I've been Freelancing primarily as a frontend web developer."
+        "I previously worked as a Sr. Systems Engineer for many years.  After finding a passion for programming, I decided to transition into a role as a web developer.  I've been consulting primarily as a frontend web developer."
 
       }
 
