@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.e2fc984a.css",
   "main.css.map": "static/css/main.e2fc984a.css.map",
-  "main.js": "static/js/main.43c3adde.js",
-  "main.js.map": "static/js/main.43c3adde.js.map",
+  "main.js": "static/js/main.bf0d7146.js",
+  "main.js.map": "static/js/main.bf0d7146.js.map",
   "static/media/HTML5_logo.svg": "static/media/HTML5_logo.525f317f.svg",
   "static/media/JQuery_logo.svg": "static/media/JQuery_logo.6ff17bd2.svg",
   "static/media/bar.jpg": "static/media/bar.45c96136.jpg",
@@ -11,6 +11,7 @@
   "static/media/dustin.firebaugh.resume.pdf": "static/media/dustin.firebaugh.resume.d1b9500a.pdf",
   "static/media/fcc.jpg": "static/media/fcc.c61d940c.jpg",
   "static/media/gameoflife.jpg": "static/media/gameoflife.2960820e.jpg",
+  "static/media/hrvaWeb.jpg": "static/media/hrvaWeb.e65c022d.jpg",
   "static/media/javascript.svg": "static/media/javascript.87711407.svg",
   "static/media/linkedin.svg": "static/media/linkedin.d52422fb.svg",
   "static/media/markdown.jpg": "static/media/markdown.5a13a19d.jpg",
@@ -24,5 +25,6 @@
   "static/media/speed.jpg": "static/media/speed.ca7f2793.jpg",
   "static/media/ttt.jpg": "static/media/ttt.4f8653e6.jpg",
   "static/media/um3.jpg": "static/media/um3.096b9055.jpg",
+  "static/media/voting.jpg": "static/media/voting.52ea0266.jpg",
   "static/media/weather.jpg": "static/media/weather.5a36734d.jpg"
 }
