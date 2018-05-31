@@ -13,8 +13,24 @@ import speed from '../images/speed.jpg';
 import bar from '../images/bar.jpg';
 import scatter from '../images/scatter.jpg';
 import weather from '../images/weather.jpg';
+import hrvaWeb from '../images/hrvaWeb.jpg';
+import voting from '../images/voting.jpg';
 
 let projects = [{
+  name:'HackRVA Website',
+  url:'https://dfirebaugh.github.io/hackrva-website',
+  github:'https://github.com/dfirebaugh/hackrva-website',
+  image:hrvaWeb,
+  tech:['ReactJS','Bootstrap']
+},
+{
+  name:'Voting App',
+  url:'https://voting-app-df.herokuapp.com',
+  github:'https://github.com/dfirebaugh/voting-app',
+  image:voting,
+  tech:['ReactJS', 'Express', 'NodeJS', 'MongoDB']
+},
+{
   name:'WebDev Portfolio',
   url:'http://dfire.io',
   github:'https://github.com/dfirebaugh/webdev-portfolio',
@@ -56,20 +72,20 @@ let projects = [{
   image:um3,
   tech:['ReactJS']
 },
-{
-  name:'MarkDown Previewer',
-  url:'https://dfirebaugh.github.io/markdown-previewer/',
-  github:'https://github.com/dfirebaugh/markdown-previewer',
-  image:markdown,
-  tech:['ReactJS']
-},
-{
-  name:'FCC LeaderBoard',
-  codepen:'https://codepen.io/dfire/pen/LZbBYN',
-  url:'https://codepen.io/dfire/full/LZbBYN/',
-  image:fcc,
-  tech:['ReactJS']
-},
+// {
+//   name:'MarkDown Previewer',
+//   url:'https://dfirebaugh.github.io/markdown-previewer/',
+//   github:'https://github.com/dfirebaugh/markdown-previewer',
+//   image:markdown,
+//   tech:['ReactJS']
+// },
+// {
+//   name:'FCC LeaderBoard',
+//   codepen:'https://codepen.io/dfire/pen/LZbBYN',
+//   url:'https://codepen.io/dfire/full/LZbBYN/',
+//   image:fcc,
+//   tech:['ReactJS']
+// },
 {
   name:'TicTacToe',
   url:'https://codepen.io/dfire/full/xOxrJO/',
