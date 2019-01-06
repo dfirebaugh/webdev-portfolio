@@ -4,8 +4,6 @@ import About from './Components/About.js';
 import ProjectCard from './Components/ProjectCard.js';
 import projects from './Components/projectList.js';
 import Logos from './Components/Logos.js';
-// import Social from './Components/Social.js';
-// import 'bootstrap/dist/css/bootstrap.css';
 import './Solar.css';
 import './App.css';
 
@@ -16,72 +14,51 @@ import './App.css';
 class App extends Component {
   constructor() {
     super()
-    this.state = { showTech: 'all' }
+    this.state = { showTech: 'All' }
 
     this.handleClick = this.handleClick.bind(this)
   }
-  handleClick(e) {
-    switch (e.target.id) {
-      default:
-        break;
-      case 'reactBtn':
-        this.setState({ showTech: 'ReactJS' });
-        break;
-      case 'jqueryBtn':
-        this.setState({ showTech: 'JQuery' });
-        break;
-      case 'nodeBtn':
-        this.setState({ showTech: 'NodeJS' });
-        break;
-      case 'expressBtn':
-        this.setState({ showTech: 'ExpressJS' });
-        break;
-      case 'mongoBtn':
-        this.setState({ showTech: 'MongoDB' });
-        break;
-      case 'd3Btn':
-        this.setState({ showTech: 'D3js' });
-        break;
-      case 'x':
-        this.setState({ showTech: 'all' });
-        break;
-    }
+  componentDidMount() {
+    // declaring a new Set
+    const projectSet = new Set();
+    // flattening our project list and adding them to the Set
+    [].concat.apply([], projects.map(x => x.tech))
+      .forEach(x => projectSet.add(x))
+    // converting the Set to an Array
+    const projectArr = [...projectSet]
 
+    this.setState({ techs: projectArr })
+    console.log(projectArr)
+  }
+  handleClick = param => e => {
+    console.log(e)
+    console.log(param)
+    this.setState({ showTech: param })
   }
   render() {
-
-    let cards;
-    let that = this;
-
-    if (this.state.showTech === 'all') {
-      cards = projects.map(function (card, i) {
-        return <ProjectCard key={i} codepen={card.codepen} github={card.github} url={card.url} title={card.name} image={card.image} techs={card.tech} />
-      })
-    }
-    else {
-      cards = projects.filter(filterByName).map(function (card, i) {
-        return <ProjectCard key={i} codepen={card.codepen} github={card.github} url={card.url} title={card.name} image={card.image} techs={card.tech} />
-      })
-    }
-
-    function filterByName(item) {
-      let count = 0;
-      for (var x = 0; x < item.tech.length; x++) {
-        if (item.tech[x] === that.state.showTech) {
-          count++;
-        }
-      }
-      if (count > 0) {
-        return true;
-      }
-      else {
-        return false;
-      }
-    }
-
-
-
-
+    const cards = projects.filter(project => {
+      return project.tech.some(x => x === this.state.showTech)
+    }).map((card, i) => (
+      <ProjectCard
+        key={i}
+        codepen={card.codepen}
+        github={card.github}
+        url={card.url}
+        title={card.name}
+        image={card.image}
+        techs={card.tech} />
+    ))
+    const allCards = projects
+      .map((card, i) => (
+        <ProjectCard
+          key={i}
+          codepen={card.codepen}
+          github={card.github}
+          url={card.url}
+          title={card.name}
+          image={card.image}
+          techs={card.tech} />
+      ))
     return (
       <div className="App">
         <TopBar />
@@ -107,43 +84,23 @@ class App extends Component {
             <h5>{" Technologies I'm working with: "}</h5>
 
             <div className='tech-list'>
+              {
+                this.state.techs && this.state.techs.map(tech => (
+                  <button
+                    type="button"
+                    className="btn btn-success"
+                    onClick={this.handleClick(tech)}>
+                    {tech}
+                  </button>
+                ))
+              }
               <button
-                id='reactBtn'
+                id='x'
                 type="button"
-                className="btn btn-success"
-                onClick={this.handleClick.bind(this)}>
-                React.js
+                className="btn btn-secondary"
+                onClick={this.handleClick('All')}>
+                X
               </button>
-              <button
-                id='jqueryBtn'
-                type="button"
-                className="btn btn-success"
-                onClick={this.handleClick}>
-                JQuery
-              </button>
-              <button
-                id='nodeBtn'
-                type="button"
-                className="btn btn-success"
-                onClick={this.handleClick}>
-                Node.js
-               </button>
-              <button
-                id='mongoBtn'
-                type="button"
-                className="btn btn-success"
-                onClick={this.handleClick}>
-                MongoDB
-              </button>
-              <button
-                id='d3Btn'
-                type="button"
-                className="btn btn-success"
-                onClick={this.handleClick}>
-                D3.js
-              </button>
-
-              <button id='x' type="button" className="btn btn-secondary" onClick={this.handleClick}>X</button>
 
             </div>
 
@@ -156,7 +113,7 @@ class App extends Component {
             <h2>Projects</h2>
             <div className='cardHolder'>
 
-              {cards}
+              {this.state.showTech === 'All' ? allCards : cards}
 
             </div>
           </div>
@@ -173,7 +130,7 @@ class App extends Component {
           <Logos />
         </footer>
 
-      </div>
+      </div >
     );
   }
 }

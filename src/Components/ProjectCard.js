@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ProjectCard extends Component {
   render() {
     const cardContainerStyle = {
-      border: '5px solid pink',
+      // border: '5px solid pink',
       width: '16em',
       height: '12em',
       color: 'white',
