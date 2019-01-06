@@ -5,14 +5,30 @@ import um3 from '../images/um3.jpg';
 import ttt from '../images/ttt.jpg';
 import pclock from '../images/pclock.jpg';
 import qgen from '../images/qgen.jpg';
-import md from '../images/md.jpg';
-import bar from '../images/bar.jpg';
-import scatter from '../images/scatter.jpg';
+import ultibot from '../images/ultibot.png';
 import weather from '../images/weather.jpg';
-import hrvaWeb from '../images/hrvaWeb.jpg';
 import voting from '../images/voting.jpg';
 
 let projects = [{
+  name: 'hack-points-frontend',
+  url: 'https://dfirebaugh.github.io/hack-points/',
+  github: 'https://github.com/dfirebaugh/hack-points',
+  image: '',
+  tech: ["ReactJS", "Material-UI"]
+}, {
+  name: 'hack-points-api',
+  url: 'https://github.com/dfirebaugh/hack-points-api',
+  github: 'https://github.com/dfirebaugh/hack-points-api',
+  image: '',
+  tech: ['NodeJS', 'Express', 'MongoDB', 'Docker']
+}, {
+  name: 'Um3-Wooter',
+  url: 'https://github.com/dfirebaugh/um3-wooter',
+  github: 'https://github.com/dfirebaugh/um3-wooter',
+  image: ultibot,
+  tech: ['Golang', "Docker"]
+},
+{
   name: 'Voting App',
   url: 'https://voting-app-df.herokuapp.com',
   github: 'https://github.com/dfirebaugh/voting-app',
