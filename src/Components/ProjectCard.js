@@ -16,7 +16,7 @@ const ProjectCard = ({ title, image, url, techs, github, codepen }) => {
   })
   return (
     <div className="cardContainer">
-      <a className="cardTitle" style={cardStyle} href={url}>
+      <a className="cardTitle" style={cardStyle} href={`project/${title}`}>
         <div className="card text-black bg-light" style={cardContainerStyle}>
           <div className="card-body" >
             <h4>{title}</h4>

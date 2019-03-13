@@ -1,6 +1,6 @@
 import React from 'react';
 import TopBar from './Components/TopBar.js';
-import Project from './Components/Project.js';
+import ProjectPage from './Components/ProjectPage';
 import About from './Components/About.js';
 import App from './App';
 import Logos from './Components/Logos.js';
@@ -18,7 +18,7 @@ const Routes = () => (
       <Router>
         <Switch>
           <Route exact path="/" component={App} />
-          <Route exact path="/project/:projectName" component={Project} />
+          <Route exact path="/project/:projectName" component={ProjectPage} />
           <Route exact path="/about" component={About} />
         </Switch>
       </Router >
