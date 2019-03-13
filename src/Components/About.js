@@ -2,7 +2,6 @@ import React from 'react';
 import df from '../images/df.jpg';
 import github from '../images/GitHub-Mark-32px.png';
 import linkedin from '../images/linkedin.svg';
-// import Social from './Social.js';
 
 const About = () => {
   const photoStyle = {

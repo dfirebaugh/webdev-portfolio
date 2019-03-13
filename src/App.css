@@ -88,6 +88,9 @@
   /*margin-bottom:0em;*/
 }
 
+.content-container{
+  margin-top:12vh;
+}
 
 .tech-list button{
   margin:5px;
@@ -119,8 +122,8 @@
 }
 
 .projects{
-  margin-top: 2vh;
+  margin-top: 4vh;
   display:flex;
   justify-content:center;
-  margin-bottom:2vh;
+  margin-bottom:10vh;
 }

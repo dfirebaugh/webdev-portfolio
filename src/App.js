@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import TopBar from './Components/TopBar.js';
-import About from './Components/About.js';
 import ProjectCard from './Components/ProjectCard.js';
 import projects from './Components/projectList.js';
 import proProjects from './Components/proProjects.js';
-import Logos from './Components/Logos.js';
 import './Solar.css';
 import './App.css';
 
@@ -86,24 +84,8 @@ class App extends Component {
       ))
     return (
       <div className="App">
-        <TopBar />
-
 
         <div className='page-container'>
-          {/* <div className='container'>
-            <div className="App-intro">
-              <h4>
-                {`I'm a software developer 
-                living in Richmond, Virginia!`}
-              </h4>
-            </div>
-            <br></br>
-            <div>
-              <h4 className='text-primary'>{"Let's work together!"} </h4>
-              <code>dustin.a.firebaugh@gmail.com</code>
-            </div>
-          </div>
-          <br></br> */}
 
           <div className="container" style={{ marginTop: "10vh" }}>
             <h5>{" Technologies I'm working with: "}</h5>
@@ -151,18 +133,6 @@ class App extends Component {
             }
           </div>
         </div>
-
-
-        <div className='aboutContainer'>
-          <About />
-        </div>
-
-
-
-        <footer className="App-footer fixed-bottom blue center-on-small-only">
-          <Logos />
-        </footer>
-
       </div >
     );
   }
