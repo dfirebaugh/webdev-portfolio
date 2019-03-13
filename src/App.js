@@ -3,6 +3,7 @@ import TopBar from './Components/TopBar.js';
 import About from './Components/About.js';
 import ProjectCard from './Components/ProjectCard.js';
 import projects from './Components/projectList.js';
+import proProjects from './Components/proProjects.js';
 import Logos from './Components/Logos.js';
 import './Solar.css';
 import './App.css';
@@ -59,13 +60,37 @@ class App extends Component {
           image={card.image}
           techs={card.tech} />
       ))
+
+    const proCards = proProjects.filter(project => {
+      return project.tech.some(x => x === this.state.showTech)
+    }).map((card, i) => (
+      <ProjectCard
+        key={i}
+        codepen={card.codepen}
+        github={card.github}
+        url={card.url}
+        title={card.name}
+        image={card.image}
+        techs={card.tech} />
+    ))
+    const allPro = proProjects
+      .map((card, i) => (
+        <ProjectCard
+          key={i}
+          codepen={card.codepen}
+          github={card.github}
+          url={card.url}
+          title={card.name}
+          image={card.image}
+          techs={card.tech} />
+      ))
     return (
       <div className="App">
         <TopBar />
 
 
         <div className='page-container'>
-          <div className='container'>
+          {/* <div className='container'>
             <div className="App-intro">
               <h4>
                 {`I'm a software developer 
@@ -78,9 +103,9 @@ class App extends Component {
               <code>dustin.a.firebaugh@gmail.com</code>
             </div>
           </div>
-          <br></br>
+          <br></br> */}
 
-          <div className="container">
+          <div className="container" style={{ marginTop: "10vh" }}>
             <h5>{" Technologies I'm working with: "}</h5>
 
             <div className='tech-list'>
@@ -105,17 +130,25 @@ class App extends Component {
             </div>
 
           </div>
-
-
-
-
-          <div id='projects' className="projects ">
-            <h2>Projects</h2>
-            <div className='cardHolder'>
-
-              {this.state.showTech === 'All' ? allCards : cards}
-
-            </div>
+          <div className="projects">
+            {proCards &&
+              <div id='professional-projects'>
+                <h1>Professional Projects</h1>
+                <p> These are projects that I've worked on in a professional setting for clients.</p>
+                <div className='cardHolder'>
+                  {this.state.showTech === 'All' ? allPro : proCards}
+                </div>
+              </div>}
+            {
+              cards &&
+              <div id='personal-projects'>
+                <h1>Personal Projects</h1>
+                <p>These are personal Projects that I've worked on for fun and for learning.</p>
+                <div className='cardHolder'>
+                  {this.state.showTech === 'All' ? allCards : cards}
+                </div>
+              </div>
+            }
           </div>
         </div>
 
