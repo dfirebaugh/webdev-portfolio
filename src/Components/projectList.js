@@ -6,7 +6,6 @@ import ttt from "../images/ttt.jpg";
 import pclock from "../images/pclock.jpg";
 import ultibot from "../images/ultibot.png";
 import weather from "../images/weather.jpg";
-import voting from "../images/voting.jpg";
 
 let projects = [
   {
@@ -35,7 +34,7 @@ let projects = [
     url: "https://dfirebaugh.github.io/hack-points/",
     github: "https://github.com/dfirebaugh/hack-points",
     image: "",
-    tech: ["ReactJS", "Material-UI", "Express", "NodeJS", "MongoDB"]
+    tech: ["ReactJS", "Material-UI", "Express", "NodeJS", "MongoDB", "Docker"]
   },
   {
     name: "Um3-Wooter",
@@ -43,13 +42,6 @@ let projects = [
     github: "https://github.com/dfirebaugh/um3-wooter",
     image: ultibot,
     tech: ["Go", "Docker"]
-  },
-  {
-    name: "Voting App",
-    url: "https://voting-app-df.herokuapp.com",
-    github: "https://github.com/dfirebaugh/voting-app",
-    image: voting,
-    tech: ["ReactJS", "Express", "NodeJS", "MongoDB"]
   },
   {
     name: "WebDev Portfolio",
